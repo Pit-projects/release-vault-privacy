@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Release Vault – einfach digital sicher dokumentiert</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; background:#111113; color:#f3e5de; font:17px/1.65 system-ui,sans-serif; }
+    main { max-width:900px; margin:auto; padding:32px 22px 64px; }
+    .header { display:block; width:100%; height:auto; }
+    h1,h2 { color:#ef682c; line-height:1.25; }
+    h1 { font-size:clamp(1.8rem,5vw,2.7rem); }
+    h2 { font-size:1.3rem; margin-top:2rem; }
+    a { color:#ffad86; }
+    nav { display:flex; flex-wrap:wrap; gap:16px; margin-top:28px; }
+    nav a { border:1px solid #ef682c; border-radius:12px; padding:10px 16px; text-decoration:none; }
+    footer { margin-top:36px; border-top:1px solid #54423b; padding-top:20px; }
+  </style>
+</head>
+<body>
+<main>
+  <img class="header" src="release-vault-header.png" alt="Release Vault – einfach · digital · sicher dokumentiert">
+  <h1>Verträge digital dokumentieren</h1>
+  <p>Release Vault unterstützt Fotografen beim Verwalten von Model- und Property-Releases, Kontakten, Unterschriften und Vertrags-PDFs. Die grundlegende Vertragsverwaltung funktioniert lokal auf dem eigenen Gerät.</p>
+  <h2>Optionale Cloud-Verbindungen</h2>
+  <p>Für Sicherungen und den Geräteabgleich kann der Nutzer Google Drive, Dropbox oder seinen eigenen Nextcloud-Server verbinden. Backups und Synchronisationsdaten werden passwortgeschützt verschlüsselt übertragen.</p>
+  <p>Google Drive verwendet nur die mit Release Vault angelegten beziehungsweise autorisierten Dateien (drive.file) und zur Übernahme älterer Sicherungen eigene Konfigurationsdaten (drive.appdata). Es ist kein allgemeiner Zugriff auf alle Drive-Dateien vorgesehen. Bei Dropbox sind Dateioperationen auf den eigenen App-Ordner beschränkt. Jeder Nutzer bestätigt seine Verbindung selbst und kann sie wieder trennen.</p>
+  <p>Bei aktivierter Nextcloud-Synchronisation werden abgeschlossene Verträge zusätzlich als direkt lesbare PDF-Kopien gespeichert. Details zu Daten, Berechtigungen und Speichervorgängen stehen in der Datenschutzerklärung.</p>
+  <h2>Remote-Unterschrift</h2>
+  <p>Die optionale Remote-Funktion ermöglicht eine Unterschrift über einen persönlichen Link. Voraussetzung sind die bestätigten Remote-Nutzungsbedingungen und, bei Nutzung als datenschutzrechtlich Verantwortlicher, ein abgeschlossener AVV.</p>
+  <nav aria-label="Informationen">
+    <a href="https://pit-projects.github.io/release-vault-privacy/">Datenschutzerklärung</a>
+    <a href="delete.html">Remote-Daten löschen</a>
+  </nav>
+  <footer>
+    <p>Release Vault by Peter Heinrich<br>Support: <a href="mailto:releasevault@pitpicture.de">releasevault@pitpicture.de</a></p>
+  </footer>
+</main>
+</body>
+</html>
