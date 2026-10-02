@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Release Vault – Remote-Daten löschen</title>
+<style>
+body{margin:0;background:#111113;color:#eeddd7;font:17px/1.6 system-ui,sans-serif}
+main{max-width:850px;margin:auto;padding:32px 22px 64px;overflow-wrap:anywhere}
+h1,h2,a{color:#ff9670}h1{line-height:1.2}h2{font-size:1.3rem}
+.notice{border-left:3px solid #d6673f;background:#261b18;padding:12px 18px}
+</style>
+</head>
+<body><main>
+<p class="notice">Der produktive Remote-Dienst bleibt bis zur gesonderten Betriebsfreigabe gesperrt. Diese Seite beschreibt den Löschweg.</p>
+<h1>Release Vault: Remote-Geräteprofil und Remote-Aufträge löschen</h1>
+<p>Anbieter: Peter Heinrich. Diese Anleitung betrifft den von Release Vault betriebenen Remote-Unterzeichnungsdienst, nicht Ihre Konten bei Google, Dropbox oder einem Nextcloud-Anbieter.</p>
+<h2>Löschung in der App</h2>
+<ol>
+<li>Öffnen Sie Release Vault auf dem Gerät, dessen Remote-Profil Sie löschen möchten.</li>
+<li>Öffnen Sie Einstellungen → Remote-Daten.</li>
+<li>Lesen Sie die Hinweise und wählen Sie „Remote-Daten löschen“.</li>
+<li>Bestätigen Sie die Löschung. Hierfür ist eine Internetverbindung erforderlich.</li>
+<li>Nach bestätigtem Servererfolg zeigt die App Datum und Uhrzeit der letzten bestätigten Remote-Löschung an. Diese Anzeige bleibt nach einem Neustart erhalten und bezieht sich auf das damals gelöschte Profil.</li>
+</ol>
+<h2>Was wird gelöscht – was bleibt erhalten?</h2>
+<p>Aus der aktiven Remote-Datenbank werden das Geräteprofil, sein öffentlicher Schlüssel und seine Remote-Aufträge einschließlich noch nicht abgeholter Unterschriften entfernt. Die bisherigen Links werden ungültig. Bei einer Löschung in der App wird der zugehörige private Geräteschlüssel nach bestätigtem Erfolg lokal entfernt. Eine externe Browser-Löschung entfernt ihn nicht automatisch vom Gerät.</p>
+<p>Lokale Kontakte, Verträge, Unterschriften und PDFs bleiben erhalten. Ein noch nicht abgeschlossener lokaler Vertrag kann danach wieder als Entwurf bearbeitet werden. Andere Geräteprofile und Cloud-Sicherungen werden nicht gelöscht. Eine spätere Remote-Aktivierung ist bewusst erneut möglich.</p>
+<p>Exportierte Dateien, Cloud-Dateien, Papierkörbe und Kopien bei Empfängern müssen gesondert gelöscht werden. Diese Funktion löscht sie nicht.</p>
+<h2>Getrennt aufbewahrte Abschlussnachweise</h2>
+<p>Nachweise über den Abschluss der Remote-Leistungsbedingungen und gegebenenfalls einer AVV werden getrennt von den Remote-Aufträgen aufbewahrt. Eine Profil-Löschung, App-Deinstallation oder Geräte-Inaktivität entfernt diese Nachweise nicht automatisch. Sie enthalten keine Model-Vertragsinhalte oder Model-Unterschriften.</p>
+<p>Ihre Aufbewahrung richtet sich nach dem noch erforderlichen Vertrags-, Nachweis- oder Rechtsverteidigungszweck beziehungsweise einer anwendbaren gesetzlichen Pflicht. Der Bedarf wird mindestens jährlich und bei Vertragsende oder berechtigter Löschanfrage früher geprüft. Eine pauschale unbegrenzte Aufbewahrung gilt nicht. Nach berechtigter Einzelfallfreigabe werden die betreffenden aktiven Nachweiskopien in D1, Versandvermerke, STRATO-Archivnachrichten und manuellen externen Kopien entfernt. Technische Löschsperrvermerke werden gesondert auf ihre Erforderlichkeit geprüft.</p>
+<h2>Verbleibende technische Speicherfristen</h2>
+<p>Historische Cloudflare-D1-Datenstände können im derzeitigen Wiederherstellungsfenster von sieben Tagen verbleiben. Wiederholungsschutz-Einträge sind zehn Minuten gültig und werden stündlich bereinigt, regulär spätestens etwa siebzig Minuten nach Erstellung. Tagesbezogene IP-Hash-Ereignisse werden nach 24 Stunden zuzüglich des stündlichen Bereinigungsintervalls entfernt. Technische Ausfälle können die Bereinigung verzögern. Anbieter-Verbindungsprotokolle sind gesondert zu berücksichtigen; ihre vollständige Einordnung ist noch offen.</p>
+<h2>Kein Zugriff auf das Gerät oder Geräteschlüssel verloren?</h2>
+<p>Wenn Sie Ihren persönlichen Remote-Löschcode zuvor gesichert haben, öffnen Sie die <a href="https://release-vault-remote-beta-sign.handy-3bc.workers.dev/remote-delete" rel="noreferrer">Remote-Löschseite von Release Vault</a>. Geben Sie dort den Code ein, lesen Sie die Hinweise und bestätigen Sie die Löschung. Der Code erlaubt ausschließlich das Löschen seines Profils, keinen Zugriff auf Vertragsinhalte. Nach erfolgreicher Löschung ist er ungültig.</p>
+<p>Den Code erstellen Sie bei aktivem Remote-Zugang unter Einstellungen → Remote-Daten → Persönlichen Remote-Löschcode erstellen. Bewahren Sie ihn sicher außerhalb des Geräts auf. Jeder mit diesem Code kann löschen. Ein neuer Code ersetzt den alten. Beim Kopieren liegt er in der Zwischenablage; fügen Sie ihn ausschließlich an einem sicheren Speicherort ein. Ein bereits verlorenes Gerät kann nicht nachträglich auf diesem Weg abgesichert werden.</p>
+<p>Nach einer externen Löschung kann eine vorhandene App noch „Remote offen“ anzeigen. Bei „Status prüfen“ wird der nicht mehr akzeptierte Zugang erklärt. Nach eigener bestätigter Löschung können Sie „Nur lokalen Verweis entfernen“ wählen, um den betroffenen Entwurf wieder lokal zu bearbeiten. Diese Aktion löscht selbst keine Serverdaten. Ein Anmeldefehler allein beweist keine Löschung.</p>
+<p>Sie können eine Löschanfrage auch außerhalb der App an <a href="mailto:releasevault@pitpicture.de?subject=Release%20Vault%20%E2%80%93%20Remote-L%C3%B6schanfrage">releasevault@pitpicture.de</a> senden. Nennen Sie Release Vault und beschreiben Sie, auf welches Gerät beziehungsweise Remote-Profil sich Ihre Anfrage bezieht.</p>
+<p>Senden Sie keine Passwörter, privaten Schlüssel, Ausweiskopien oder vollständigen Vertragsbestände unaufgefordert. Vor Herausgabe oder Löschung prüfen wir Berechtigung, Zuordnung und Umfang anhand bereits vorhandener Angaben. Bei begründeten Zweifeln klären wir die Anfrage über einen bereits bestätigten Kontaktweg und nötigenfalls durch angemessene weitere Nachweise. Ausweiskopien werden nicht pauschal verlangt. Postfachzugriff allein belegt nicht unabhängig die Identität oder Vertretungsberechtigung; die bloße Kenntnis einer Gerätekennung oder Vertragsreferenz genügt nicht. Entscheidung, Maßnahme und Ergebnis werden nachvollziehbar dokumentiert. Ohne ausreichende Zuordnung kann kein fremdes Profil gelöscht werden.</p>
+<p>Ist der Löschbutton ausgegraut, ist kein nutzbarer Remote-Geräteschlüssel gespeichert. Das ist allein kein Nachweis einer Serverlöschung.</p>
+<p><a href="index.html">Datenschutzerklärung für Release Vault</a></p>
+<p>Stand: 02.10.2026.</p>
+</main></body></html>
